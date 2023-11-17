@@ -1,0 +1,9 @@
+powershell
+irm get.scoop.sh | iex
+scoop install nvim
+scoop install git
+mkdir ~/AppData/Local/nvim
+curl https://raw.githubusercontent.com/abraham-milgram/configs/main/init.lua -o ~/AppData/Local/nvim/init.lua
+git config --global user.name "Abraham Milgram"
+git config --global user.email abemilgram@gmail.com
+git config --global core.editor "C:\Users\amilgram25\scoop\shims\nvim.exe"
